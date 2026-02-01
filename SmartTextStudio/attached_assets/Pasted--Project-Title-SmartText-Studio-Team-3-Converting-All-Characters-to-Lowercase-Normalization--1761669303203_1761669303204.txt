@@ -1,0 +1,134 @@
+🧠 Project Title
+
+SmartText Studio – Team 3: Converting All Characters to Lowercase & Normalization
+
+🎯 Project Description
+
+This project demonstrates the process of text normalization in Natural Language Processing (NLP), focusing on:
+
+Case Folding (convert text to lowercase)
+
+Text Normalization (remove punctuation, extra spaces, emojis, etc.)
+
+Accent Removal (convert “Héllò” → “hello”)
+
+Lemmatization (convert “running”, “ran” → “run”)
+
+It allows users to input any text in real time, process it through these stages, and visualize results via:
+
+Word Clouds 🌀
+
+Frequency Charts 📊
+
+Before vs After comparison ✍️
+
+Also performs Sentiment Analysis (Before vs After) using a pre-trained Hugging Face transformer model.
+
+⚙️ Recommended Tech Stack
+
+(✅ means best choice)
+
+Layer	Tool	Why
+Frontend + UI	✅ Streamlit	Instantly creates web UI for text input, visuals & outputs
+NLP Processing	✅ spaCy + NLTK	For lemmatization, tokenization, normalization
+Sentiment Model	✅ Transformers (Hugging Face)	For pre-trained sentiment classification
+Visualization	✅ Matplotlib + WordCloud	Easy to show token frequency & text clouds
+Hosting (optional)	✅ Streamlit Cloud / Replit AI	Free & simple web deployment
+🧩 Dependencies (auto-installed if you use prompt in AI IDE)
+streamlit
+nltk
+spacy
+transformers
+matplotlib
+wordcloud
+unidecode
+pandas
+
+💬 Full Prompt (Paste This in Replit AI, Bolt, or V0.dev)
+
+🔹 Prompt:
+
+Build a web-based NLP app using Python (Streamlit) named SmartText Studio – Team 3: Text Normalization.
+
+🎯 Goal: Allow users to enter any text in real time and perform the following tasks step by step:
+
+Case Folding: Convert all characters to lowercase.
+
+Text Normalization: Remove punctuation, emojis, numbers, and extra spaces.
+
+Accent Removal: Normalize Unicode text (e.g., “Héllò” → “hello”).
+
+Lemmatization: Reduce words to their base form (run, running, ran → run).
+
+📊 Visualization:
+
+Generate Word Clouds for before vs after text.
+
+Display Token Frequency Bar Charts for top N tokens.
+
+Show Before vs After Text Comparison in two columns.
+
+Perform Sentiment Analysis (Before vs After) using Hugging Face’s distilbert-base-uncased-finetuned-sst-2-english model, visualized as a comparison bar chart.
+
+⚙️ Tech Stack:
+
+Frontend/UI: Streamlit
+
+Processing: spaCy + NLTK + Unidecode
+
+Visualization: Matplotlib + WordCloud
+
+Model: Transformers (Hugging Face sentiment pipeline)
+
+Language: Python 3
+
+🧠 UI Features:
+
+Sidebar options to toggle word cloud / frequency chart / sentiment analysis.
+
+A main text box for user input.
+
+A button “Preprocess Text” to trigger processing.
+
+Option to download cleaned text as .txt file.
+
+📈 Expected Output Layout:
+
+Title: “SmartText Studio – Team 3”
+
+Input box for user text
+
+Two columns showing “Original Text” vs “Cleaned Text”
+
+Word Cloud visualization (side-by-side)
+
+Token Frequency bar chart (before vs after)
+
+Sentiment comparison chart
+
+Include all necessary imports and requirements.txt.
+The app should run directly when executing streamlit run app.py.
+
+Make UI colorful and professional with Streamlit layout and markdown headings.
+Add tooltips or notes for each process step for clarity.
+
+Finally, show footer text:
+“✨ Made with ❤️ by Team 3 – SmartText Studio (NLP Normalization Project)”
+
+🎨 Example Output (in App)
+
+Input Text:
+
+“Héllooo!!! I AM Running So Fast 😍😂...”
+
+Output (After Processing):
+
+“hello i am run so fast”
+
+Visuals:
+
+Word Cloud (before → messy; after → clean)
+
+Bar Chart (top token frequencies)
+
+Sentiment: before = 0.93 (positive), after = 0.90 (positive)
